@@ -1,0 +1,19 @@
+{
+  "name": "curriculo-expresso",
+  "version": "1.0.0",
+  "description": "criando curriculo com Node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kátia Maciel Ramos",
+  "license": "ISC",
+  "dependencies": {
+    "ejs": "^2.6.2",
+    "express": "^4.17.1",
+    "http-errors": "^1.7.3"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.1"
+  }
+}

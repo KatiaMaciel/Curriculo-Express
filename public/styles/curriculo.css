@@ -1,0 +1,56 @@
+body {
+    width: 100%;
+    font-size: 1.5rem;
+    max-width: 960px;
+}
+
+.container {
+    background-color: #F2F2F2;
+    border: 8px solid #F28B0C;
+    border-radius: 12px;
+    padding: 3em;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+
+}
+
+.container h1 {
+    border-bottom: 4px solid #C1C9D9;
+    color: #0E2A3B;
+    text-align: center;
+    width: 25rem;
+}
+
+.personal, .wellcome{
+    padding-bottom: 1.5rem;
+}
+
+.personal {
+    margin-top: 3rem;
+    line-height: 1.5;
+    border-bottom: 3px solid #C1C9D9;
+}
+
+.profession{
+    margin-top: 1.5rem;
+}
+
+.profession span, .experience > span, .education > span, .language > span, .skills > span{
+    line-height: 3rem;
+    font-size: 1.3rem;
+    font-weight: 700;
+    color: #0E2A3B;
+}
+
+.profession p, .experience li, .education li, .language li{
+    margin-bottom: 2.5rem;
+    padding-left: 1.5rem;
+    list-style: none;
+}
+
+.skills li {
+    list-style: none;
+    float: left;
+    padding: 2rem;
+}

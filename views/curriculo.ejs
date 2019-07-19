@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title> <%= title %> </title>
+        <link rel="stylesheet" href="/styles/global.css" />
+        <link rel="stylesheet" href="/styles/curriculo.css" />
+    </head>
+    <body>
+        <div class="container">
+            <main>
+                <h1> <%= title %></h1>
+                <div class="personal">
+                    <p class="wellcome">Bem vindo(a) ao <strong><%= title %></strong></p>
+                    <h3><%= name %></h3>
+                    <p>Contato: <%= mobile %></p>  
+                    <p><%= email %></p>
+                </div>
+                <div class="profession">
+                    <span>Objetivo:</span>              
+                    <p><%= profession %></p>
+                    <span>Qualificações:</span> 
+                    <p><%= description %></p>
+                </div>
+
+                <div class="experience">
+                    <span>Experiências e Atividades:</span>
+                    <ul>
+                        <% experience.map(experience => { %>
+                            <li>
+                                <div>
+                                    <strong><%= experience.company %> - <%= experience.time %></strong>
+                                    <br>
+                                    <strong><%= experience.office %></strong>
+                                    <br>
+                                    <span><%= experience.description %></span>
+                                </div>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+                <div class="education">
+                    <span>Formação:</span>
+                    <ul>
+                        <% education.map(education => { %>
+                            <li>
+                                <div>
+                                    <strong><%= education.institution %></strong>
+                                    <br>
+                                    <span><%= education.description %></span>
+                                    <br>
+                                    <span><%= education.conclusion %></span>
+                                </div>
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+                <div class="language">
+                    <span>Idiomas:</span>
+                    <ul>
+                        <% language.map(language => { %>
+                            <li>
+                                <div>
+                                    <strong><%= language.course %></strong> - <%= language.level %>
+                                    <br>
+                                    <span><%= language.institution %></span>
+                                </div>
+                            </li>
+                        
+                        <% }) %>
+                    </ul>
+                </div>
+                <div class="skills">
+                    <span>Habilidades:</span>
+                    <ul>
+                        <% skills.map(skill => { %>
+                            <li>
+                                <img src= "<%= skill %>">
+                            </li>
+                        <% }); %>
+                    </ul>
+                </div>
+            </main>
+        </div>
+    </body>
+</html>
